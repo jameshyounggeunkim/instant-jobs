@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Madimi+One">
+    <link rel="stylesheet" href="../styles/styles.css">
+
+    <title>Instant Jobs</title>
+</head>
+
+<body>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <img src="../img/logo.png" class="img-fluid" />
+                </div>
+                <div class="col">
+                    <h1>Instant Jobs</h1>
+                    <h2>Where a Fast Job Search Happens</h2>
+                    <!-- Modal Button -->
+                    <button class="postBtn" id="myBtn">Post Jobs</button>
+                    <!-- Extra Feature Buttons -->
+                    <button class="newsBtn" id="random">Get a Random Employment News!</button>
+                    <button class="listBtn" id="salary">List Jobs by the Hightest Salary</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form>
+                <h1>Post Any Jobs!</h1>
+                <label for="title-input">
+                    <h3>Job Title:</h3>
+                </label>
+                <input type='text' id="title-input" />
+
+                <label for="state-select">
+                    <h3>States:</h3>
+                </label>
+                <select id="state-select"></select>
+
+                <label for="location-input">
+                    <h3>Location</h3>
+                </label>
+                <input type='text' id="location-input" />
+
+                <label for="salary-input">
+                    <h3>Annual Salary</h3>
+                </label>
+                <input type='text' id="salary-input" />
+
+                <label for="desc-input">
+                    <h3>Job Description</h3>
+                </label>
+                <textarea name="desc" id="desc-input" rows="4" cols="50">Please describe your position here.</textarea>
+                </br>
+                <button class="addBtn">Add</button>
+            </form>
+        </div>
+    </div>
+
+    <main>
+        <section id="job-list"></section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center">
+                    <h1>All Rights Reserved by James Kim</h1>
+                    <h3>Phone: 123-456-7890</h3>
+                    <h3>Email: instantjobs@test.com</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
