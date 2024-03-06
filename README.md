@@ -36,7 +36,7 @@ Please refer to an image below:
 - app uses 2 tables
 - app uses a foreign key and join
 
-<Tech Stacks for this project>
+#Tech Stacks for this project
 - JavaScript
 - HTML5, CSS, Bootstrap
 - NodeJS, Axios, Cors, Express
